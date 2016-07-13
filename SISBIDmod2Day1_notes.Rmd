@@ -1,0 +1,26 @@
+---
+title: "SISBID 2016 Module 2, Visualizing Biomedical Big Data, Day 1"
+author: "Katherine Nishimura"
+date: "Julu 13, 2016"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+### Notes from...
+
+```{r chunk0, echo=TRUE}
+# clear the workspace
+rm(list = ls())
+```
+
+```{r chunk, echo=TRUE}
+# 
+```
+
+
+
+### Include the session tools
+```{r end, echo=TRUE}
+devtools::session_info()
+```
