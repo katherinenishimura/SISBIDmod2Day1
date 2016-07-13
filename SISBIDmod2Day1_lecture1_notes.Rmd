@@ -1,0 +1,65 @@
+---
+title: "SISBID 2016 Module 2, Visualizing Biomedical Big Data, Day 1"
+author: "Katherine Nishimura"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Notes from afternoon lecture
+### website: https://github.com/dicook/SISBID-2016
+### green button: clone or download > download zip
+
+```{r chunk0, echo=TRUE}
+# clear the workspace
+rm(list = ls())
+```
+
+### CRAN packages
+```{r cran, echo=TRUE}
+# install packages
+packages <- c("devtools", "ggplot2", "tidyr", "dplyr", "purrr", "broom", "GGally", 
+              "nullabor", "shiny", "ggvis", "plotly", "ggenealogy", "geomnet", "xkcd", "seqinr")
+# install.packages(packages, dep=TRUE, repos = "https://cloud.r-project.org/")
+# rm(packages)
+```
+
+### Bioconductor packages
+```{r bioc, echo=TRUE}
+bioC <- c("ggbio", "epivzr", "edgeR", "EDAseq")
+source("https://bioconductor.org/biocLite.R")
+# biocLite(bioC)
+# rm(bioC)
+```
+
+### packages under development
+use the devtools package to install packages being developed in github
+```{r devtools, echo=TRUE}
+# devtools::install_github("heike/gglogo")
+# devtools::install_github("haleyjeppson/ggmosaic")
+```
+
+### converting Rmarkdown files to .R scripts
+```{r}
+# to extract the R code from an Rmarkdown file:
+# need library knitr
+library(knitr)
+# ?purl
+# purl(file.choose()) 
+# will open a window to select the Rmarkdown file that you want to convert
+# and save the converted file as a .R file in the same directory
+```
+
+###GGplot lecture
+
+
+
+### Include the session tools
+```{r end, echo=TRUE}
+devtools::session_info()
+```
